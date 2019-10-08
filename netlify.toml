@@ -2,3 +2,5 @@
   Command = "npm run build"
   Functions = "functions-build"
   Publish = "public"
+
+/*    /index.html   200
