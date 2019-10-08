@@ -1,0 +1,29 @@
+{
+  "name": "hinge-health-interviews",
+  "private": true,
+  "description": "Basic app for coding interviews",
+  "version": "0.1.0",
+  "author": "Marc Cull <marc.cull@hingehealth.com>",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "netlify-lambda": "^1.6.3",
+    "prettier": "^1.18.2"
+  },
+  "keywords": [
+    "hinge-health"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start:lambda": "netlify-lambda serve src/lambda",
+    "build:lambda": "netlify-lambda build src/lambda"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hinge-health/interviews"
+  },
+  "bugs": {
+    "url": "https://github.com/hinge-health/interviews/issues"
+  }
+}
