@@ -1,4 +1,4 @@
 [build]
   Command = "npm run build"
-  Functions = "./trees/functions-build"
+  Functions = "functions-build"
   Publish = "public"
