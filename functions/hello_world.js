@@ -1,4 +1,6 @@
-exports.handler = (event, context, callback) => {
-    const response = {
-    callback(null, {"statusCode": 200, "body": "hello! world!"})
+exports.handler = async (event, context) => {
+  return {
+    statusCode: 200,
+    body: "Hello, World"
+  };
 };
