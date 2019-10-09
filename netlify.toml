@@ -1,7 +1,7 @@
 [build]
   command = "npm run build"
-  functions = "trees/functions"
-  publish = "trees/build"
+  functions = "functions"
+  publish = "build"
   base = "trees"
 
 [[redirects]]
