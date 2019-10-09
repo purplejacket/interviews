@@ -1,0 +1,11 @@
+[build]
+  command = "npm run build"
+  functions = "trees/functions"
+  publish = "trees/build"
+  base = "trees"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  
