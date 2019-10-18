@@ -1,6 +1,10 @@
 const md5 = require('md5');
 const AWS = require('aws-sdk'); 
-AWS.config.update({region: 'us-east-1'});
+AWS.config = new AWS.Config();
+AWS.config.update({ region: 'us-east-1', 
+                    accessKeyId: process.env.ACCESS_KEY_ID,
+                    secretAccessKey: process.env.SECRET_ACCESS_KEY     
+                });
 
 exports.handler = async (event, context) => {
     let body = `{}`
