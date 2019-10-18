@@ -36,9 +36,14 @@ exports.handler = async (event, context) => {
         const id = event.queryStringParameters.id
         //fetch json for id
         body = `{"id": "${id}", {"tree": {}}`
+        return {
+            statusCode: 200,
+            body: body
+          };
+    } else {
+        return {
+            statusCode: 200,
+            body: body
+          };
     }
-    return {
-      statusCode: 200,
-      body: body
-    };
   };
