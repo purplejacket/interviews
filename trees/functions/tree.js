@@ -6,7 +6,7 @@ AWS.config.update({ region: 'us-east-1',
                     secretAccessKey: process.env.SECRET_ACCESS_KEY     
                 });
 
-exports.handler = async (event, context) => {
+exports.handler = function (event, context) => {
     let body = `{}`
     s3 = new AWS.S3({apiVersion: '2006-03-01'});
     if (event.httpMethod === "POST") {
@@ -14,9 +14,6 @@ exports.handler = async (event, context) => {
         //save json
        
         const path = `interviews/trees/${id}`
-
-        const uploadParams = {Bucket: 'hingehealth-engineering', Key: path, Body: event.body};
-
         const params = {
             ACL: "public-read", 
             Body: event.body, 
