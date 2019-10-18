@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import './index.css'
-
-const api_host = process.env.REACT_APP_API_HOST;
+const axios = require('axios').default;
 
 export default function Tree() {
     return (
