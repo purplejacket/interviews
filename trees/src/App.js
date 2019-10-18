@@ -38,7 +38,7 @@ export default function App() {
               <ol>
                 <li>Check out the file <code>./tree/index.js</code>.</li>
                 <li>Replace its inline "styling" with css in the <code>./tree/index.css</code> file.</li>
-                <li>When the results look exactly the same as the original, please commit changes.</li>
+                <li>When the results look exactly the same as the original, please commit changes to master and push to remote.</li>
                 <li><i>Bonus: How would you prove that your results are exactly the same as the original?  (Show work in a new commit.)</i></li>
                 <li><i>Bonus: Can we number every line such that <code>root</code> starts with "1" 
                       and <code>ant</code> starts with 1.1 and ... <code>elephant</code> starts with 1.2.2.1? (Show work in a new commit.)</i></li>
@@ -53,7 +53,7 @@ export default function App() {
                   It should capture just the values and relationships currently onscreen after step one</li>
                 <li>Update <code>./tree/index.js</code> to use your JSON object to draw the animal tree 
                 instead of the your (styled) inline text.</li>
-                <li>When the results look exactly the same as the original, please commit changes.</li>
+                <li>When the results look exactly the same as the original, please commit changes and push to remote.</li>
                 <li><i>Bonus: Redraw the tree upside down (reading bottom to top: root, ant, bear...)</i></li>
                 <li><i>Bonus: After the first letter of each element, add as many periods as the level the element is on.  (Root is 0)  E.g. <code>d..og</code></i></li>
 
@@ -69,7 +69,7 @@ export default function App() {
                 </li>
                 <li>When someone types a new word in the text box and hits enter, add that word to the tree and redraw it.</li>
                 <li>Add a ❌ after every element on the tree.  When a user clicks the ❌, remove that node. </li>
-                <li>When you can add and remove items from the tree, commit your changes.</li>
+                <li>When you can add and remove items from the tree, commit your changes and push to remote.</li>
                 <li><i>Bonus: Add a toggle to the page that alphabetizes the tree, when toggled one way, or restores the 
                   tree to the order items were entered when toggled the other way.</i></li>
                 <li><i>Bonus: How would you prove that elements can be added and removed from the tree properly?</i></li>
@@ -77,14 +77,10 @@ export default function App() {
             </div>
             <div className="App-step">💾 And persistence! </div>
             <div className="App-instructions">
-              <ul className="App-api">
-                <li>JSON objects POSTed to https://interview.hingehealth.com/api/tree are saved, 
-                  with a return value that includes the key of the saved tree.</li>
-                <li>Calls to GET https://interview.hingehealth.com/api/tree?id=[id] will return the saved tree.</li>
-              </ul>
+              Check out the persistence API at <a href="http://myjson.com/api">http://myjson.com/api</a>
               <ol>
                 <li>Save your tree whenever a new element is added or deleted.</li>
-                <li>Commit your changes when you can make a changes to the tree that are fetched from the API on page refresh.</li>
+                <li>Commit your changes and push to remote when you can make a changes to the tree that are fetched from the API on page refresh.</li>
                 <li><i>Bonus: Add a debouncer to only save the tree when it's changed.</i></li>
                 <li><i>Bonus: How would you use this API to make a (more or less) collaborative tree editing app?  
                        How collaborative could it be? What limits would it have?</i></li>
