@@ -6,7 +6,7 @@ AWS.config.update({ region: 'us-east-1',
                     secretAccessKey: process.env.SECRET_ACCESS_KEY     
                 });
 
-exports.handler = function (event, context) => {
+exports.handler = function (event, context) {
     let body = `{}`
     s3 = new AWS.S3({apiVersion: '2006-03-01'});
     if (event.httpMethod === "POST") {
